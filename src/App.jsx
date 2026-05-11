@@ -1,10 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
-import "./index.css";
-
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+export default function App() {
+  return (
+    <div style={{padding:"40px", fontFamily:"Arial"}}>
+      <h1>Homeline Interior Website</h1>
+      <p>Website Successfully Running 🚀</p>
+    </div>
+  );
+}
