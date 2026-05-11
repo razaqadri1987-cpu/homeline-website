@@ -1,26 +1,41 @@
-export default function App() {
+function App() {
   return (
-    <div style={{fontFamily:"Arial", padding:"40px"}}>
-      <h1>Homeline Interior Website</h1>
-      <p>Welcome to Homeline Interior Website.</p>
+    <div>
+      <header style={{background:'#111',color:'#fff',padding:'20px',textAlign:'center'}}>
+        <h1>Homeline Interior</h1>
+        <p>Modern Interior Design Solutions</p>
+      </header>
 
-      <div style={{marginTop:"30px"}}>
-        <h2>Our Services</h2>
-        <ul>
-          <li>Interior Design</li>
-          <li>Modular Kitchen</li>
-          <li>Wardrobe Design</li>
-          <li>False Ceiling</li>
-          <li>PVC Flooring</li>
-        </ul>
-      </div>
+      <section style={{padding:'40px',textAlign:'center'}}>
+        <h2>Welcome to Homeline Interior</h2>
+        <p>
+          We provide modular kitchen, wardrobe, PVC panel, false ceiling,
+          wallpaper and complete home interior services.
+        </p>
+      </section>
 
-      <div style={{marginTop:"30px"}}>
-        <h2>Contact Us</h2>
-        <p>Website: www.homelineteam.com</p>
-        <p>Email: info@homelineteam.com</p>
-        <p>Phone: +91 XXXXX XXXXX</p>
-      </div>
+      <section style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(250px,1fr))',gap:'20px',padding:'20px'}}>
+        <div style={{border:'1px solid #ddd',padding:'20px',borderRadius:'10px'}}>
+          <h3>Modular Kitchen</h3>
+          <p>Premium modern kitchen designs.</p>
+        </div>
+
+        <div style={{border:'1px solid #ddd',padding:'20px',borderRadius:'10px'}}>
+          <h3>Wardrobe Design</h3>
+          <p>Custom wardrobe interiors.</p>
+        </div>
+
+        <div style={{border:'1px solid #ddd',padding:'20px',borderRadius:'10px'}}>
+          <h3>False Ceiling</h3>
+          <p>Luxury ceiling and lighting work.</p>
+        </div>
+      </section>
+
+      <footer style={{background:'#111',color:'#fff',padding:'20px',textAlign:'center'}}>
+        <p>© 2026 Homeline Interior Website</p>
+      </footer>
     </div>
-  );
+  )
 }
+
+export default App
